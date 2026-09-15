@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Animafest: aluguel de brinquedos para festas e eventos. Escolha seus brinquedos e solicite um orçamento pelo WhatsApp.">
+  <meta name="theme-color" content="#168bd2">
+  <title>Animafest | Aluguel de Brinquedos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23168bd2'/%3E%3Cpath d='M15 42 26 18l7 15 7-10 9 19' fill='none' stroke='%23ffd83d' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Animafest - início">
+        <span class="brand-mark"><b>ANIMA</b><b>FEST</b></span>
+        <span class="brand-name">Animafest<small>Aluguel de brinquedos</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#brinquedos">Brinquedos</a><a href="#como-funciona">Como funciona</a><a href="#galeria">Galeria</a><a
+          href="#sobre">Sobre</a><a href="#contato">Contato</a>
+      </nav>
+      <a class="cart-button" href="#brinquedos" aria-label="Ver brinquedos escolhidos"><span>🎈</span><span
+          class="cart-text">Meu orçamento</span><b id="cart-count">0</b></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="confetti" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">A festa começa aqui!</span>
+          <h1>Diversão de verdade para momentos <em>inesquecíveis.</em></h1>
+          <p>Escolha os brinquedos, monte seu orçamento e fale com a Animafest em poucos passos. Atendimento
+            personalizado do início ao fim.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#brinquedos">Escolher brinquedos <span>→</span></a>
+            <a class="btn btn-ghost" href="#galeria">Ver nossas festas</a>
+          </div>
+          <div class="trust-row"><span>✓ Montagem cuidadosa</span><span>✓ Atendimento personalizado</span><span>✓
+              Diversão garantida</span></div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-photo">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=85"
+              alt="Festa infantil colorida com balões">
+            <div class="floating-card"><b>🎉 Sua festa completa</b><span>Brinquedos para todas as idades</span></div>
+          </div>
+          <div class="shape shape-yellow"></div>
+          <div class="shape shape-red"></div>
+        </div>
+      </div>
+      <div class="wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="section toys" id="brinquedos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="eyebrow">Monte sua diversão</span>
+            <h2>Escolha seus brinquedos</h2>
+          </div>
+          <p>Toque em “Adicionar” para montar sua lista. Você poderá revisar tudo antes de enviar o pedido.</p>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filtrar brinquedos">
+          <button class="filter active" data-filter="todos">Todos</button><button class="filter"
+            data-filter="inflaveis">Infláveis</button><button class="filter"
+            data-filter="classicos">Clássicos</button><button class="filter" data-filter="pequenos">Para os
+            pequenos</button>
+        </div>
+        <div class="toy-grid" id="toy-grid">
+          <article class="toy-card reveal" data-category="inflaveis" data-name="Tobogã Inflável">
+            <div class="toy-image"><img
+                src="https://static.wixstatic.com/media/391ac8_68ff4baa7f904472b30c84e6719a1436~mv2.jpg/v1/fill/w_900,h_650,al_c,q_85/391ac8_68ff4baa7f904472b30c84e6719a1436~mv2.jpg"
+                alt="Tobogã inflável colorido"><span>Infláveis</span></div>
+            <div class="toy-content">
+              <h3>Tobogã Inflável</h3>
+              <p>Uma atração marcante para deixar a festa ainda mais emocionante.</p><button
+                class="add-button">Adicionar <span>+</span></button>
+            </div>
+          </article>
+          <article class="toy-card reveal" data-category="classicos" data-name="Cama Elástica">
+            <div class="toy-image"><img
+                src="https://www.caculinhafestas.com.br/img/blog/grande/screenshot-20240306-120148-gallery-1712345753.jpg"
+                alt="Cama elástica em festa infantil"><span>Clássicos</span></div>
+            <div class="toy-content">
+              <h3>Cama Elástica</h3>
+              <p>Diversão que não para, com espaço para pular e brincar à vontade.</p><button
+                class="add-button">Adicionar <span>+</span></button>
+            </div>
+          </article>
+          <article class="toy-card reveal" data-category="pequenos" data-name="Piscina de Bolinhas">
+            <div class="toy-image"><img
+                src="https://static.wixstatic.com/media/391ac8_0425ca6716f8446f9a02327b9e13856d~mv2.jpg/v1/fill/w_900,h_650,al_c,q_85/391ac8_0425ca6716f8446f9a02327b9e13856d~mv2.jpg"
+                alt="Piscina de bolinhas colorida"><span>Para os pequenos</span></div>
+            <div class="toy-content">
+              <h3>Piscina de Bolinhas</h3>
+              <p>Um cantinho colorido e divertido pensado especialmente para os pequenos.</p><button
+                class="add-button">Adicionar <span>+</span></button>
+            </div>
+          </article>
+          <article class="toy-card reveal" data-category="inflaveis" data-name="Castelo Pula-Pula">
+            <div class="toy-image"><img src="https://img.olx.com.br/images/16/164661026851856.jpg"
+                alt="Castelo pula-pula inflável"><span>Infláveis</span></div>
+            <div class="toy-content">
+              <h3>Castelo Pula-Pula</h3>
+              <p>O favorito das crianças para gastar energia e criar boas lembranças.</p><button
+                class="add-button">Adicionar <span>+</span></button>
+            </div>
+          </article>
+          <article class="toy-card reveal" data-category="pequenos" data-name="Mini Tobogã com Bolinhas">
+            <div class="toy-image"><img
+                src="https://brinquedosprafesta.com.br/home/images/mini-com-bolinhas-sc5db63d0acb526-1280.jpeg"
+                alt="Mini tobogã com piscina de bolinhas"><span>Para os pequenos</span></div>
+            <div class="toy-content">
+              <h3>Mini Tobogã</h3>
+              <p>Escorregador e bolinhas em uma atração compacta e superdivertida.</p><button
+                class="add-button">Adicionar <span>+</span></button>
+            </div>
+          </article>
+          <article class="toy-card reveal" data-category="classicos" data-name="Kit Recreação">
+            <div class="toy-image"><img
+                src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=900&q=85"
+                alt="Brinquedos coloridos para crianças"><span>Clássicos</span></div>
+            <div class="toy-content">
+              <h3>Kit Recreação</h3>
+              <p>Uma seleção versátil para completar a brincadeira em qualquer espaço.</p><button
+                class="add-button">Adicionar <span>+</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps" id="como-funciona">
+      <div class="container">
+        <div class="section-title reveal"><span class="eyebrow">Simples e rápido</span>
+          <h2>Sua festa em 3 passos</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step reveal"><b>01</b>
+            <div class="step-icon">🧸</div>
+            <h3>Escolha</h3>
+            <p>Adicione à lista todos os brinquedos que combinam com a sua festa.</p>
+          </article>
+          <article class="step reveal"><b>02</b>
+            <div class="step-icon">📅</div>
+            <h3>Conte os detalhes</h3>
+            <p>Informe a data, o local e os detalhes importantes do seu evento.</p>
+          </article>
+          <article class="step reveal"><b>03</b>
+            <div class="step-icon">💬</div>
+            <h3>Peça o orçamento</h3>
+            <p>Envie tudo pelo WhatsApp e confirme a disponibilidade com a equipe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section-head light reveal">
+          <div><span class="eyebrow">Momentos especiais</span>
+            <h2>Festas que ganharam vida</h2>
+          </div><a href="https://www.instagram.com/animafest1505/" target="_blank" rel="noopener">Acompanhe no Instagram
+            ↗</a>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-main reveal"><img
+              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=85"
+              alt="Decoração de festa infantil">
+            <figcaption>Festas cheias de cor e alegria</figcaption>
+          </figure>
+          <figure class="reveal"><img
+              src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=85"
+              alt="Criança em festa de aniversário"></figure>
+          <figure class="reveal"><img
+              src="https://images.unsplash.com/photo-1607453998774-d533f65dac99?auto=format&fit=crop&w=800&q=85"
+              alt="Brinquedos infantis coloridos"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-logo"><span>ANIMA</span><span>FEST</span><small>Desde o primeiro sorriso</small></div>
+          <div class="about-badge">💛<b>Feito com amor</b></div>
+        </div>
+        <div class="about-copy reveal"><span class="eyebrow">Sobre a Animafest</span>
+          <h2>A diversão é levada a sério por aqui.</h2>
+          <p>Trabalhamos para transformar festas e eventos em momentos alegres para toda a família. Cada atendimento é
+            feito de forma próxima e personalizada, ajudando você a escolher as melhores opções para o seu espaço e para
+            a idade das crianças.</p>
+          <div class="about-points">
+            <div><span>♥</span>
+              <p><b>Atendimento próximo</b>Você fala diretamente com nossa equipe.</p>
+            </div>
+            <div><span>★</span>
+              <p><b>Experiência completa</b>Orientação da escolha até o evento.</p>
+            </div>
+          </div><a class="btn btn-primary" href="#brinquedos">Montar meu orçamento</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container contact-card reveal">
+        <div><span class="eyebrow">Vamos planejar sua festa?</span>
+          <h2>A diversão está a uma mensagem de distância.</h2>
+          <p>Escolha os brinquedos ou fale agora com a Animafest para tirar suas dúvidas.</p>
+          <div class="contact-links"><a href="https://www.instagram.com/animafest1505/" target="_blank" rel="noopener">◎
+              @animafest1505</a><span>📍 Consulte nossa área de atendimento</span></div>
+        </div><a class="btn btn-whatsapp" href="https://wa.link/y4k5x7" target="_blank" rel="noopener">Conversar no
+          WhatsApp <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap"><a class="brand brand-footer" href="#inicio"><span
+          class="brand-mark"><b>ANIMA</b><b>FEST</b></span><span class="brand-name">Animafest<small>Aluguel de
+            brinquedos</small></span></a>
+      <p>Transformando festas em boas lembranças.</p>
+      <div><a href="https://www.instagram.com/animafest1505/" target="_blank" rel="noopener">Instagram</a><a
+          href="https://wa.link/y4k5x7" target="_blank" rel="noopener">WhatsApp</a></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Animafest. Todos os direitos reservados.</div>
+  </footer>
+
+  <button class="floating-cart" id="floating-cart" aria-label="Abrir pedido"><span>🎈</span><strong><span
+        id="floating-count">0</span> brinquedo(s)</strong><small>Revisar pedido →</small></button>
+  <div class="modal" id="quote-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button
+        class="modal-close" data-close aria-label="Fechar">×</button><span class="eyebrow">Seu orçamento</span>
+      <h2 id="modal-title">Vamos finalizar?</h2>
+      <div id="selected-list" class="selected-list"></div>
+      <form id="quote-form"><label>Seu nome<input id="customer-name" type="text" placeholder="Como podemos chamar você?"
+            required></label>
+        <div class="form-row"><label>Data da festa<input id="event-date" type="date" required></label><label>Cidade /
+            bairro<input id="event-place" type="text" placeholder="Onde será?" required></label></div>
+        <label>Observações<textarea id="event-notes" rows="3"
+            placeholder="Idade das crianças, horário, dúvidas..."></textarea></label><button
+          class="btn btn-whatsapp form-submit" type="submit">Enviar pedido pelo WhatsApp <span>↗</span></button>
+        <p class="form-note">O envio não confirma a reserva. A equipe verificará a disponibilidade e responderá com o
+          orçamento.</p>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
